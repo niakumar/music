@@ -26,6 +26,12 @@ main {
 ul{list-style:none;overflow: hidden;}
 a, a:hover, a:active{ text-decoration:none; outline: none;}
 img, img:active, img:visited{ outline:none; border:none;}
+.overlay{position: fixed;z-index: 9;top: 0;bottom: 0;left: 0;right: 0;background: #000;opacity: 0.5; display: none;}
+
+.popup{position: fixed;width: 30%;height: 200px;padding: 15px;background: #fff;border-radius: 5px;z-index: 99;left: 0;right: 0;top: 0;bottom: 0;margin: auto;min-width: 298px; display: none;}
+.display_none{ display: none; }
+.display_block{ display: block; }
+.overflow_hidden{ overflow: hidden; }
 header {
   width: 100%;
   padding:10px;
@@ -93,7 +99,7 @@ header nav ul li a:hover{ color: #000;}
 .section .small_slider a span:nth-of-type(2){font-size: 12px;text-align: center; color: #9ea5a9; display: block;margin-right: 35px;padding: 3px 0;}
 .section .discover_bar{background:#f3f4f8;padding: 10px 28px;overflow: hidden;}
 .section .discover_bar h3{font-size:22px;color:#777e84;font-weight:700;padding: 5px 0 5px 23px;}
-.section .discover_bar ul li{width:20%;float:left;max-width: 150px;position:relative;margin: 10px 24px;}
+.section .discover_bar ul li{width: 15%;float:left;max-width: 150px;position:relative;margin: 10px 2.5%;}
 .section .discover_bar ul li:nth-child(5n+5){ margin-right:0;}
 .section .discover_bar li img{width:100%;}
 .section .discover_bar li span{font-size: 14px;color: #545a63;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 100%;padding: 5px 0;display: block;}
