@@ -56,7 +56,9 @@ header nav ul li a:hover{ color: #000;}
 
 .player{width:100%;background:#72bab6;height: 60px;padding: 5px;}
 .player .audio-js-box{ position: relative; }
-.player .audio-js-box .playlist{ position: absolute; right: 0;  }
+.player .audio-js-box .playlist{ right: 156px; top: 9px;}
+.player .audio-js-box .playlist i:before{ content: "\f03a"; font-size: 18px; color: #fff; 
+    cursor: pointer;}
 
 
 
