@@ -105,7 +105,7 @@ footer .social_bar li.facebook{ background: #5578d4;}
 footer .social_bar li.facebook:before{content: "\f09a";font-size: 26px;left: 133px;top: 12px;}
 footer .social_bar li.google_plus{background: #d06162; width: 33.4%;}
 footer .social_bar li.google_plus:before{content: "\f0d5"; font-size: 26px;left: 103px;top: 12px;}
-footer .coppyright{padding: 15px 21px;font-size: 14px;color: #796c6c;}
+footer .coppyright{padding: 15px 21px;font-size: 12px;color: #796c6c;}
 
 
 
