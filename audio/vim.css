@@ -1,0 +1,61 @@
+.vim-css .vjs-controls {
+  height: 50px!important;
+  opacity: 0.9!important;
+  color: #fff!important;
+   /* Width of play button + margin */
+   /* Width of all the controls to the right of the progress control + margins */
+  width: 100%!important;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: none;
+}
+.vim-css .vjs-controls > li {
+  width: 25px!important;
+  margin: 8px 0 0 0!important;
+  padding: 0!important;
+  text-align: center!important;
+  background: #72bab6;
+  border-radius: 0!important;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+}
+/* Placement of Control Items */
+.vim-css .vjs-controls > li.vjs-play-control       {width: 35px!important;height: 35px!important;padding: 0!important;margin: 0!important;top: 5px;}
+.vim-css .vjs-controls > li.vjs-progress-control   {width: 74.6%!important;position: relative!important;left: 135px;max-width: 1155px;border-radius: 0!important;margin: 0!important;top: 19px;}
+.vim-css .vjs-controls > li.vjs-time-control       {width: 75px!important;left: 60px!important;border-bottom-left-radius: 5px!important;border-top-left-radius: 5px!important;}
+.vim-css .vjs-controls > li.vjs-volume-control     {width: 60px!important;right: 75px!important;margin-top: 11px!important;}
+
+/* Play/Pause
+-------------------------------------------------------------------------------- */
+.vim-css .vjs-controls .vjs-play-control {margin: 0!important;height: 50px!important;border-radius: 5px!important;-webkit-border-radius: 100%!important;-moz-border-radius: 5px!important;}
+.vim-css .vjs-play-control.vjs-play span {margin: 10px 0 0 12px!important;border-left: 16px solid #fff;border-top: 10px solid rgba(0,0,0,0);border-bottom: 10px solid rgba(0,0,0,0);}
+.vim-css .vjs-play-control:hover {background: #72bab6!important;}
+.vim-css .vjs-play-control.vjs-pause span {width: 12px!important;height: 15px!important;border-left: 5px solid #fff!important;border-right: 5px solid #fff!important;margin: 11px 0 0 11px!important;}
+
+/* Progress
+-------------------------------------------------------------------------------- */
+.vim-css .vjs-controls .vjs-progress-control { border-radius: 5px 0 0 5px!important; -webkit-border-radius: 5px 0 0 5px!important; -moz-border-radius: 5px 0 0 5px!important; }
+.vim-css .vjs-progress-control .vjs-progress-holder {height: 8px!important;padding: 1px!important;border: 1px #fff solid;margin: 0!important;}
+.vim-css .vjs-progress-control .vjs-play-progress {height: 4px!important;background: #FFF!important;}
+.vim-css .vjs-progress-control .vjs-load-progress {height: 8px!important;background: #80c1bd!important;}
+
+/* Time Display
+-------------------------------------------------------------------------------- */
+.vim-css .vjs-controls .vjs-time-control { font-size: 11px!important; }
+.vim-css .vjs-controls .vjs-time-control span {line-height: 32px!important; /* Centering vertically *//* position: absolute; */left: 1px;right: 0;}
+
+/* Volume
+-------------------------------------------------------------------------------- */
+.vim-css .vjs-volume-control ul {padding: 7px 0 0 15px!important;position: relative;}
+.vim-css .vjs-volume-control ul:before{content: "\f026";font-size: 20px;top: 3px;color: #fff;left: -18px;width: 45px;}
+.vim-css .vjs-volume-control ul li { 
+  float: left!important; margin: 0 2px 0 0!important; padding: 0!important; list-style: none!important; width: 3px!important; height: 3px!important; border-bottom: 12px solid #666666!important; 
+  -webkit-transition: all 100ms linear!important; -moz-transition: all 100ms linear!important;
+}
+.vim-css .vjs-volume-control ul li.vjs-volume-level-on {border-color: #FFF!important;}
+.vim-css .vjs-volume-control ul li:hover { height: 0!important; border-bottom-width: 15px!important; }
+

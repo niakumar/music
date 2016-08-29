@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+i{position: relative;}
+i:before, i:after, :before, :after{ position: absolute; font-family: 'FontAwesome'; font-style:normal;}
+main {
+  width: 100%;
+  margin:auto;
+  max-width:1600px;
+}
+ul{list-style:none;overflow: hidden;}
+a, a:hover, a:active{ text-decoration:none; outline: none;}
+img, img:active, img:visited{ outline:none; border:none;}
+header {
+  width: 100%;
+  padding:10px;
+  overflow:hidden;
+}
+header .logo{float:left;margin-right: 50px;}
+header .search_bar {float:left;padding: 12px 0; position: relative;}
+header .search_bar input{min-width: 235px;padding: 10px 30px 10px 10px;border: 1px #c7c9c9 solid;}
+header .search_bar input[type="submit"]{
+    min-width: 20px;
+    height: 20px;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    right: 9px;
+    z-index: 9;
+    cursor: pointer;
+    }
+    header .search_bar i{position: absolute;right: 26px;top: 25px;}
+header .search_bar i:before { content: "\f002"; font-size: 12px; color: #000;}
+header nav{float:right;padding: 17px 0;}
+header nav ul li{display:inline-block;text-align:center;padding:5px 10px;}
+header nav ul li a{font-size: 18px;color: #45b39d;}
+header nav ul li a:hover{ color: #000;}
+
+.slider{ background:#B4B4B4;}
+
+.player{width:100%;background:#72bab6;height: 60px;padding: 5px;}
+
+
+.container{width:100%;position: relative;overflow: hidden;}
+.container .sidebar{max-width: 297px;background:#424b50;width: 22%;float: left;position: absolute;left: 0;top: 0;bottom: 0;}
+.sidebar .music_nav ul li{text-align:left;position:relative;border-bottom:1px #4f585d solid;padding: 15px 0 15px 50px;}
+.sidebar .music_nav ul li a{text-decoration:none;color:#fff;font-size: 14px;}
+.sidebar .music_nav ul li a:hover{ color:#45b39d; }
+.sidebar .music_nav ul li a i.music_icon:before{font-size: 20px; content: "\f001";left: -29px;font-weight: 100;top: -1px;}
+.sidebar .music_nav ul li a i.user:before{ font-size:20px;   content: "\f007"; left: -29px; font-weight: 100; top:-1px;}
+.sidebar .music_nav ul li a i.gallery:before{ font-size:19px;   content: "\f03e"; left: -29px; font-weight: 100; top: -1px; }
+.sidebar .music_nav ul li a i.contact:before{ font-size:20px;   content: "\f0f6"; left: -29px; font-weight: 100; top: -1px; }
+.sidebar .music_nav ul li a i.upload_icon:before{ font-size:20px;     content: "\f001"; left: -29px; font-weight: 100; top: -1px; }
+.sidebar .music_nav ul li a i.upload_icon:after{font-size: 13px;color: #fff;content: "\f01b";left: -17px;font-weight: 100;top: 13px;}
+
+.sidebar .new_songs_bar{padding-top:45px; }
+.sidebar .new_songs_bar h3 {color: #00fff1;font-size: 18px;padding: 10px 0 10px 20px;}
+.sidebar .new_songs_bar ul li{text-align:left; border-bottom: 1px #4f585d solid;}
+.sidebar .new_songs_bar ul li a{ display: block; padding: 8px 21px; }
+.sidebar .new_songs_bar ul li a:hover{ background: #45b39d; font-weight:bold;}
+.sidebar .new_songs_bar ul li span{font-size:12px;color:#fff; width:60%; display: inline-block;}
+.sidebar .new_songs_bar ul li b {width: 20%; font-size:12px;color:#fff; display: inline-block;}
+.sidebar .new_songs_bar ul li i{ width: 10%; float: right;}
+.sidebar .new_songs_bar ul li i:before{     content: "\f144"; font-size: 18px; color: #fff; right: 0;}
+
+.container .section{float:right;width: 78%;}
+.section h1 i{ position: absolute;     right: 30px;    top: 16px;}
+.section h1{font-size: 22px;text-align: left;color: #72bab6;border-bottom:1px #c8c8c8 solid;padding: 10px  0 10px 49px;position: relative;}
+.section h1 i:before{  right: 20px;   content: "\f021"; color: #ada5a0; font-size: 18px; font-weight: 100;}
+.section .small_slider{margin: 15px 50px;padding: 10px 0 7px 30px;border: 1px #ebefef solid;border-radius: 5px;}
+.section .small_slider a span:nth-of-type(1){font-size: 14px;text-align: center;color: #72bab6;display: block;margin-right: 35px;padding: 7px 0;}
+.section .small_slider a span:nth-of-type(2){font-size: 12px;text-align: center; color: #9ea5a9; display: block;margin-right: 35px;padding: 3px 0;}
+.section .discover_bar{background:#f3f4f8;padding: 10px 28px;overflow: hidden;}
+.section .discover_bar h3{font-size:22px;color:#777e84;font-weight:700;padding: 5px 0 5px 23px;}
+.section .discover_bar ul li{width:20%;float:left;max-width: 150px;position:relative;margin: 10px 24px;}
+.section .discover_bar ul li:nth-child(5n+5){ margin-right:0;}
+.section .discover_bar li img{width:100%;}
+.section .discover_bar li span{font-size: 14px;color: #545a63;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 100%;padding: 5px 0;display: block;}
+.section .discover_bar li span:last-child{ padding: 2px 0; color: #a7a2a0; font-size: 12px;}
+.section .discover_bar li .song_details{ position:absolute; z-index:9; background-color:rgba(0,0,0,0.5); opacity:0.5}
+.section .discover_bar li .song_details span{ font-size:12px; color:#fff;}
+
+footer{ background:#f3f4f8;}
+footer .social_bar:after{ display: table; clear: both; content: '';}
+footer .social_bar li{ float: left; width: 33.3%; text-align: center; padding: 15px 0; font-size: 18px; color: #fff; position: relative;}
+footer .social_bar li.twitter{ background: #58aed7;}
+footer .social_bar li.twitter:before{content: "\f099"; font-size: 26px;left: 114px;top: 12px;}
+footer .social_bar li.facebook{ background: #5578d4;}
+footer .social_bar li.facebook:before{content: "\f09a";font-size: 26px;left: 133px;top: 12px;}
+footer .social_bar li.google_plus{background: #d06162; width: 33.4%;}
+footer .social_bar li.google_plus:before{content: "\f0d5"; font-size: 26px;left: 103px;top: 12px;}
+footer .coppyright{padding: 15px 21px;font-size: 14px;color: #796c6c;}
+
+
+
+
