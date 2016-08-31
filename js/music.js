@@ -16,11 +16,15 @@
       AudioJS.setup();
       $("<li class='playlist'><i></i></li>").insertBefore(".vjs-volume-control");
       $('.upload_songs').click(function(){
-      	$('.overlay').addClass('display_block');
-      	$('.popup').addClass('display_block');
+      	$('.overlay, .upload_popup').addClass('display_block');
       	$('body').addClass('overflow_hidden');
 
-      })
+      });
+      $('.closed').click(function(){
+        $('.upload_popup, .overlay').removeClass('display_block');
+        $('body').removeClass('overflow_hidden');
+
+      });
     };
 
 
