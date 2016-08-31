@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+i{position: relative;}
+i:before, i:after, :before, :after{ position: absolute; font-family: 'FontAwesome'; font-style:normal;}
+main {
+  width: 100%;
+  margin:auto;
+  max-width:1600px;
+}
+ul{list-style:none;overflow: hidden;}
+a, a:hover, a:active{ text-decoration:none; outline: none;}
+img, img:active, img:visited{ outline:none; border:none;}
+
+.grid-row:after{ display:table; content:''; clear:both;}
+.platform .overlay{ position: fixed; top: 0;  bottom: 0; z-index: 9; background: #000; opacity: 0.7; left: 0; right: 0; }
+.grid1{width:8.33333333%;}
+.grid2 {width: 16.66666667%;}
+.grid3 {width: 25%;}
+.grid4 {width: 33.33333333%;}
+.grid5{width:41.66666667%;}
+.grid6 {width: 50%;}
+.grid7{width:58.33333333%;}
+.grid8 {width: 66.66666667%;}
+.grid9 {width: 75%;}
+.grid10 {width: 83.33333333%;}
+.grid11{width:91.66666667%}
+.grid12 {width: 100%;}
+.float_left {float: left;}
+.float_right {float: right;}
+.clr{ clear: both; }
+
+.overlay{position: fixed;z-index: 9;top: 0;bottom: 0;left: 0;right: 0;background: #000;opacity: 0.5; display: none;}
+
+.upload_popup{position:absolute; width: 30%;height: 200px;padding: 15px;background: #fff;border-radius: 5px;z-index: 99;left: 0;right: 0;top: 0;bottom: 0;margin: auto;min-width: 298px; display: none;}
+.upload_popup .closed{
+    position: absolute;
+    right: -9px;
+    top: -11px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 100%;
+    background: #45b39d;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+.display_none{ display: none; }
+.display_block{ display: block; }
+.overflow_hidden{ overflow: hidden; }
