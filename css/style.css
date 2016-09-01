@@ -31,6 +31,7 @@ header nav ul li a:hover{ color: #000;}
 .sidebar .music_nav ul li a:hover{ color:#45b39d; }
 .sidebar .music_nav ul li a i.music_icon:before{font-size: 20px; content: "\f001";left: -29px;font-weight: 100;top: -1px;}
 .sidebar .music_nav ul li a i.user:before{ font-size:20px;   content: "\f007"; left: -29px; font-weight: 100; top:-1px;}
+.sidebar .music_nav ul li a i.enquiry:before{ font-size:20px;   content: "\f044"; left: -29px; font-weight: 100; top:-1px;}
 .sidebar .music_nav ul li a i.gallery:before{ font-size:19px;   content: "\f03e"; left: -29px; font-weight: 100; top: -1px; }
 .sidebar .music_nav ul li a i.contact:before{ font-size:20px;   content: "\f0f6"; left: -29px; font-weight: 100; top: -1px; }
 .sidebar .music_nav ul li a i.upload_icon:before{ font-size:20px;     content: "\f001"; left: -29px; font-weight: 100; top: -1px; }
@@ -38,12 +39,14 @@ header nav ul li a:hover{ color: #000;}
 
 .sidebar .new_songs_bar{padding-top:45px; }
 .sidebar .new_songs_bar h3 {color: #00fff1;font-size: 18px;padding: 10px 0 10px 20px;}
-.sidebar .new_songs_bar ul li{text-align:left; border-bottom: 1px #4f585d solid;}
-.sidebar .new_songs_bar ul li a{ display: block; padding: 8px 21px; overflow: hidden; }
-.sidebar .new_songs_bar ul li a:hover{ background: #45b39d; font-weight:bold;}
+.sidebar .new_songs_bar ul li{text-align:left;border-bottom: 1px #4f585d solid;overflow: hidden;padding: 10px 5px 10px 21px;}
+.sidebar .new_songs_bar ul li:hover{background: #45b39d; font-weight:bold;}
 .sidebar .new_songs_bar ul li span{font-size:12px;color:#fff;}
 .sidebar .new_songs_bar ul li b { font-size:12px;color:#fff;}
-.sidebar .new_songs_bar ul li i:before{     content: "\f144"; font-size: 18px; color: #fff; right: 0;}
+.sidebar .new_songs_bar ul li i:before{content: "\f144";font-size: 18px;color: #fff;right: -10px;cursor: pointer;}
+.sidebar .new_songs_bar ul li em:before{position: absolute;content: "\f036";font-size: 12px;color: #fff;cursor: pointer;left: 0;}
+.sidebar .new_songs_bar ul li em:after{position: absolute;content: "\f067";font-size: 10px;color: #fff;top: 1px;right: 4px;}
+
 
 .container .section{float:right;width: 78%;}
 .section h1 i{ position: absolute;     right: 30px;    top: 16px;}
@@ -58,7 +61,11 @@ header nav ul li a:hover{ color: #000;}
 .section .discover_bar ul li:nth-child(5n+5){ margin-right:0;}
 .section .discover_bar li img{width:100%;}
 .section .discover_bar li span{font-size: 14px; color: #545a63; white-space: nowrap; text-overflow:ellipsis; overflow: hidden; width: 100%; padding: 5px 0; display: block;}
-.section .discover_bar li span:last-child{ padding: 2px 0; color: #a7a2a0; font-size: 12px;}
+.section .discover_bar li span:last-child{padding: 2px 20px 2px 0;color: #a7a2a0;font-size: 12px;position: relative;}
+.section .discover_bar li span:last-child i{position: absolute; right: 0;}
+.section .discover_bar li span:last-child i:before{position: absolute;content: "\f036";font-size: 12px;color: #a7a2a0;cursor: pointer;right: 7px;}
+.section .discover_bar li span:last-child i:hover:before,.section .discover_bar li span:last-child i:hover:after { color: #72bab6; }
+.section .discover_bar li span:last-child i:after{position: absolute;content: "\f067";font-size: 10px;color: #a7a2a0;top: 1px;right: 1px; cursor: pointer;}
 .section .discover_bar li .song_details{ position:absolute; z-index:9; background-color:rgba(0,0,0,0.5); opacity:0.5}
 .section .discover_bar li .song_details span{ font-size:12px; color:#fff;}
 
@@ -71,6 +78,21 @@ footer .social_bar li span.facebook:before{content: "\f09a";font-size: 26px;left
 footer .social_bar li:nth-of-type(3){background: #d06162; padding: 15px 0;}
 footer .social_bar li span.google_plus:before{content: "\f0d5";font-size: 26px;left: 91px;top: -3px;}
 footer .coppyright{padding: 15px 21px;font-size: 14px;color: #796c6c;}
+
+.upload_popup h2{ font-size: 18px; color: #000; border-bottom: 1px #ccc solid; text-align: center; padding: 10px 0; text-align: center; }
+.upload_popup input{background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #72bab6;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all .3s;
+	margin: 5px 0;}
+
+.upload_popup input[type="submit"]{width: 200px;border-radius: 5px;background: #72bab6;color: #fff;font-size: 14px;text-align: center;margin: 8px 23%; cursor: pointer;}
 
 
 

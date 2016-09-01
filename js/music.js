@@ -19,9 +19,9 @@
       	$('.overlay, .upload_popup').addClass('display_block');
       	$('body').addClass('overflow_hidden');
 
-      });
+      })
       $('.closed').click(function(){
-        $('.upload_popup, .overlay').removeClass('display_block');
+        $('.overlay, .upload_popup').removeClass('display_block');
         $('body').removeClass('overflow_hidden');
 
       });
