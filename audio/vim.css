@@ -1,6 +1,6 @@
 .vim-css .vjs-controls {
   height: 50px!important;
-  opacity: 0.9!important;
+  opacity: 1!important;
   color: #fff!important;
    /* Width of play button + margin */
    /* Width of all the controls to the right of the progress control + margins */
@@ -9,6 +9,7 @@
   margin: 0;
   position: relative;
   border: none;
+  overflow: inherit;
 }
 .vim-css .vjs-controls > li {
   width: 25px!important;

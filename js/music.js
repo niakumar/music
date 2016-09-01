@@ -14,17 +14,21 @@
     // If not using a JS library
     window.onload = function(){
       AudioJS.setup();
-      $("<li class='playlist'><i></i></li>").insertBefore(".vjs-volume-control");
+      $('.playlist').insertBefore(".vjs-volume-control");
       $('.upload_songs').click(function(){
       	$('.overlay, .upload_popup').addClass('display_block');
       	$('body').addClass('overflow_hidden');
 
-      })
+      });
       $('.closed').click(function(){
         $('.overlay, .upload_popup').removeClass('display_block');
         $('body').removeClass('overflow_hidden');
-
       });
+
+      $('.playlist').click(function(){
+        $('.playlist').children('ul').toggleClass('display_block');  
+      })
     };
+
 
 

@@ -47,7 +47,7 @@ img, img:active, img:visited{ outline:none; border:none;}
 
 .overlay{position: fixed;z-index: 9;top: 0;bottom: 0;left: 0;right: 0;background: #000;opacity: 0.5; display: none;}
 
-.upload_popup{position:fixed; width: 30%;height: 255px;padding: 15px;background: #fff;border-radius: 5px;z-index: 99;left: 0;right: 0;top: 0;bottom: 0;margin: auto;min-width: 298px; display: none;}
+.upload_popup{position:fixed; width: 30%;height: 265px;padding: 15px;background: #fff;border-radius: 5px;z-index: 99;left: 0;right: 0;top: 0;bottom: 0;margin: auto;min-width: 298px; display: none;}
 .upload_popup .closed{
     position: absolute;
     right: -9px;
