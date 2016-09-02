@@ -60,3 +60,8 @@
 .vim-css .vjs-volume-control ul li.vjs-volume-level-on {border-color: #FFF!important;}
 .vim-css .vjs-volume-control ul li:hover { height: 0!important; border-bottom-width: 15px!important; }
 
+@media screen and (max-width:1270px ){
+.vim-css .vjs-controls > li.vjs-progress-control{ width: 68%!important; }
+
+}
+
